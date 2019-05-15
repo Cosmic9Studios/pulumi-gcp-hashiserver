@@ -43,7 +43,7 @@ export default class HashiServer extends pulumi.ComponentResource {
             instanceDescription: options.description,
             labels: options.labels,
             machineType: options.machineType,
-            metadataStartupScript: fs.readFileSync(`${__dirname}/startup.sh`, "utf-8"),
+            metadataStartupScript: fs.readFileSync(`${__dirname}/files/startup.sh`, "utf-8"),
             networkInterfaces: [{
                 network: options.networkLink,
             }],
