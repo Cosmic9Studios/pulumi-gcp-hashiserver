@@ -20,7 +20,6 @@ export default class HashiServer extends pulumi.ComponentResource {
         super("c9s:component:HashiServer", name);
         options = { 
             networkTier: "STANDARD",
-            publicKeyPath: `${os.homedir()}/.ssh/id_rsa.pub`,
             description: "Created by Pulumi",
             labels: {},
             serviceAccountName: "c9s-bot",
