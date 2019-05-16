@@ -9,7 +9,6 @@ interface IHashiServerOptions {
     networkLink: string | pulumi.Output<string>,
     targetSize: number,
     networkTier?: string,
-    publicKeyPath?: string,
     description?: string,
     labels?: pulumi.Input<{[key: string]: pulumi.Input<string>}>,
     serviceAccountName?: string,

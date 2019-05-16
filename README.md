@@ -20,7 +20,6 @@ const hashiServer = new HashiServer("Server", {
 
     // Optional properties (below are the default values)
     networkTier: "STANDARD",
-    publicKeyPath: `${os.homedir()}/.ssh/id_rsa.pub`,
     description: "Created by Pulumi",
     labels: {},
     serviceAccountName: "c9s-bot",
